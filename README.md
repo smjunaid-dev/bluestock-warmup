@@ -1,4 +1,4 @@
-🚀 Bluestock Fintech — Warm-Up Backend Assignment
+### 🚀 Bluestock Fintech — Warm-Up Backend Assignment
 
 A backend application built as part of Bluestock SWE internship warm-up, implementing authentication, secure routing, PostgreSQL persistence and company profile APIs.
 
@@ -12,7 +12,9 @@ This project demonstrates:
 ✔ MVC style structure
 ✔ Documentation and API testing proof
 
-🏗 Tech Stack
+---
+
+### 🏗 Tech Stack
 Component	Technology
 Runtime	Node.js
 Framework	Express.js
@@ -21,8 +23,10 @@ Auth	JWT
 Password Hashing	bcrypt
 Config	dotenv
 Testing	Thunder Client / Postman
-📌 Key Features
 
+---
+
+### 📌 Key Features
 ✔ Register users into database
 ✔ Validate login and generate JWT
 ✔ Protect routes using middleware
@@ -30,7 +34,9 @@ Testing	Thunder Client / Postman
 ✔ Fetch authenticated user's company profile
 ✔ Clean folder structure and reusable modules
 
-📁 Folder Layout
+---
+
+### 📁 Folder Layout
 backend/
  ├── src/
  │   ├── config/
@@ -42,7 +48,7 @@ backend/
  ├── README.md
  └── .gitignore
 
-⚙️ Installation & Setup
+### ⚙️ Installation & Setup
 1️⃣ Install dependencies
 npm install
 
@@ -75,11 +81,11 @@ Method	Endpoint
 POST	/api/company/save
 GET	/api/company/me
 
-🔑 Authorization Header Required:
+### 🔑 Authorization Header Required:
 
 Authorization: Bearer <token>
 
-📌 Sample Profile Payload
+### 📌 Sample Profile Payload
 {
   "company_name": "Bluestock Solutions",
   "industry": "Fintech",
@@ -90,7 +96,7 @@ Authorization: Bearer <token>
   "postal_code": "500001"
 }
 
-🧪 Testing Guide (Runbook)
+### 🧪 Testing Guide (Runbook)
 
 Register a user
 
@@ -116,8 +122,6 @@ Simple validation ensures data integrity.
 ### 🔹 Database tables visible
 ![Database Tables](./screenshots/pgadmin_bd(company,users).png)
 
----
-
 ### 🔹 Register API (User Signup)
 ![Register API](./screenshots/api_register.png)
 
@@ -130,9 +134,9 @@ Simple validation ensures data integrity.
 ### 🔹 Fetch Company Profile API
 ![Fetch Profile API](./screenshots/api_profile.png)
 
+---
 
-
-Example usage in README:
+### Example usage in README:
 
 🔹 User Registration
 
@@ -150,7 +154,7 @@ users → stores auth details
 
 company_profile → stores company details linked via foreign key
 
-✨ Improvements Implemented
+### ✨ Improvements Implemented
 
 ✔ Validation middleware
 ✔ Centralized database connection
@@ -161,16 +165,21 @@ company_profile → stores company details linked via foreign key
 
 Designed to demonstrate backend fundamentals for full-stack development and production-best practices.
 
-📝 Submitted For
+---
+
+### 📝 Submitted For
 
 Bluestock Fintech SWE Internship Warm-Up Assignment
 Developed by Junaid
 
-⭐ Feedback / Suggestions Welcome
+### ⭐ Feedback / Suggestions Welcome
 
 Feel free to fork, improve or extend this project.
 
-🎉 Thank you for reviewing!
+---
+
+### 🎉 Thank you for reviewing!
 
 You can paste this as-is in GitHub README — looks professional and complete.
+
 
