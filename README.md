@@ -102,11 +102,34 @@ Fetch profile using /api/company/me
 
 Simple validation ensures data integrity.
 
-📸 Screenshots & Testing Proof
+## 📸 Screenshots (Execution Proof)
 
-Place screenshots here:
+### 🔹 pgAdmin server connected
+![pgAdmin Server](./screenshots/pgadmin_servers.png)
 
-/screenshots/
+### 🔹 Users table created
+![Users Table](./screenshots/pgadmin_users(columns).png)
+
+### 🔹 Company Profile table created
+![Company Profile Table](./screenshots/pgadmin_companyprofile(columns).png)
+
+### 🔹 Database tables visible
+![Database Tables](./screenshots/pgadmin_bd(company,users).png)
+
+---
+
+### 🔹 Register API (User Signup)
+![Register API](./screenshots/api_register.png)
+
+### 🔹 Login API (JWT Generated)
+![Login API](./screenshots/api_login.png)
+
+### 🔹 Company Profile Save API
+![Save Profile API](./screenshots/api_company.png)
+
+### 🔹 Fetch Company Profile API
+![Fetch Profile API](./screenshots/api_profile.png)
+
 
 
 Example usage in README:
@@ -150,3 +173,4 @@ Feel free to fork, improve or extend this project.
 🎉 Thank you for reviewing!
 
 You can paste this as-is in GitHub README — looks professional and complete.
+
