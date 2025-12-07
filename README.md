@@ -1,105 +1,152 @@
-🚀 Bluestock Warm-Up Backend Assignment
+🚀 Bluestock Fintech — Warm-Up Backend Assignment
 
-A backend project implementing authentication, PostgreSQL CRUD operations and secure API access.
+A backend application built as part of Bluestock SWE internship warm-up, implementing authentication, secure routing, PostgreSQL persistence and company profile APIs.
 
-📌 Features
+🔥 Overview
 
-✔ User registration
-✔ Login with JWT authentication
-✔ Protected routes
-✔ Save or update company profile
-✔ Fetch company profile
-✔ Environment-based config
+This project demonstrates:
+
+✔ Node.js API development
+✔ Authentication and JWT security
+✔ Database CRUD operations
+✔ MVC style structure
+✔ Documentation and API testing proof
 
 🏗 Tech Stack
+Component	Technology
+Runtime	Node.js
+Framework	Express.js
+Database	PostgreSQL
+Auth	JWT
+Password Hashing	bcrypt
+Config	dotenv
+Testing	Thunder Client / Postman
+📌 Key Features
 
-Node.js
+✔ Register users into database
+✔ Validate login and generate JWT
+✔ Protect routes using middleware
+✔ Create or update company profile
+✔ Fetch authenticated user's company profile
+✔ Clean folder structure and reusable modules
 
-Express.js
-
-PostgreSQL
-
-JWT
-
-bcrypt
-
-dotenv
-
-Thunder Client / Postman
-
-📂 Folder Structure
+📁 Folder Layout
 backend/
  ├── src/
  │   ├── config/
  │   ├── controllers/
  │   ├── middleware/
  │   ├── routes/
+ │   ├── tests/
  │   └── server.js
  ├── README.md
  └── .gitignore
 
-⚙️ Setup Instructions
-1️⃣ Install Dependencies
+⚙️ Installation & Setup
+1️⃣ Install dependencies
 npm install
 
-2️⃣ Create .env File
+2️⃣ Create .env file
 PORT=5000
 DB_HOST=localhost
 DB_PORT=5432
 DB_USER=postgres
-DB_PASSWORD=JUNAID@1209
+DB_PASSWORD=yourpassword
 DB_NAME=company_db
 JWT_SECRET=mysecretkey
 
 
-📌 Do not commit .env.
+⚠️ Do not upload .env to GitHub.
 
-3️⃣ Start Server
+3️⃣ Start server
 npm run dev
 
 
-Runs on:
+The backend runs at:
 👉 http://localhost:5000
 
-🔐 API Routes Summary
-✳ Register
+🔐 API Endpoints
+✳ Authentication
+Method	Endpoint	Purpose
+POST	/api/auth/register	Register user
+POST	/api/auth/login	Login + JWT token
+✳ Company Profile (Protected)
+Method	Endpoint
+POST	/api/company/save
+GET	/api/company/me
 
-POST /api/auth/register
-
-✳ Login
-
-POST /api/auth/login
-✔ Returns JWT token
-
-✳ Save/Update Company Profile
-
-POST /api/company/save
-
-Header:
+🔑 Authorization Header Required:
 
 Authorization: Bearer <token>
 
-✳ Get Company Profile
+📌 Sample Profile Payload
+{
+  "company_name": "Bluestock Solutions",
+  "industry": "Fintech",
+  "address": "Hyderabad",
+  "city": "Hyderabad",
+  "state": "Telangana",
+  "country": "India",
+  "postal_code": "500001"
+}
 
-GET /api/company/me
+🧪 Testing Guide (Runbook)
 
-Header:
+Register a user
 
-Authorization: Bearer <token>
+Login → Copy the token
 
-📸 Testing Proof
+Hit /api/company/save with Authorization header
 
-You can add screenshots in:
+Fetch profile using /api/company/me
+
+Simple validation ensures data integrity.
+
+📸 Screenshots & Testing Proof
+
+Place screenshots here:
 
 /screenshots/
 
 
-Example:
+Example usage in README:
 
-![Register API](./screenshots/register.png)
-![Login API](./screenshots/login.png)
+🔹 User Registration
 
-🙌 Submitted For
+🔹 Company Profile Save
 
-Bluestock Fintech SWE Warm-Up Assignment
+🔹 Profile Fetch
+
+These verify that the backend was tested successfully.
+
+🗄 Database Design
+
+Tables:
+
+users → stores auth details
+
+company_profile → stores company details linked via foreign key
+
+✨ Improvements Implemented
+
+✔ Validation middleware
+✔ Centralized database connection
+✔ Protected routes
+✔ User-scoped profile access
+
+👨‍💻 Project Use Case
+
+Designed to demonstrate backend fundamentals for full-stack development and production-best practices.
+
+📝 Submitted For
+
+Bluestock Fintech SWE Internship Warm-Up Assignment
 Developed by Junaid
+
+⭐ Feedback / Suggestions Welcome
+
+Feel free to fork, improve or extend this project.
+
+🎉 Thank you for reviewing!
+
+You can paste this as-is in GitHub README — looks professional and complete.
