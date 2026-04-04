@@ -1,6 +1,6 @@
 ### 🚀 Bluestock Fintech — Warm-Up Backend Assignment
 
-A backend application built as part of Bluestock SWE internship warm-up, implementing authentication, secure routing, PostgreSQL persistence and company profile APIs. 
+A backend application built as part of Bluestock SWE internship warm-up, implementing authentication, secure routing, PostgreSQL persistence and company profile APIs.   
   
 🔥 Overview
 This project demonstrates:
