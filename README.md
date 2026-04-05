@@ -2,7 +2,7 @@
 
 A backend application built as part of Bluestock SWE internship warm-up, implementing authentication, secure routing, PostgreSQL persistence and company profile APIs.   
   
-🔥 Overview
+🔥 Overview 
 This project demonstrates:
 
 ✔ Node.js API development
